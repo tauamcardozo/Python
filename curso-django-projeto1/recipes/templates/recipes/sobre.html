@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Programação Python Django</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 50px 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      font-size: 32px;
+      color: #2575fc;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #2575fc;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #6a11cb;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Sobre Programação em Python com Django</h1>
+    <p>
+      Python é uma das linguagens de programação mais populares e versáteis do mundo, conhecida pela sua simplicidade, legibilidade e vasta gama de aplicações. De automação de tarefas a desenvolvimento de inteligência artificial, Python está presente em diversas áreas da tecnologia.
+    </p>
+    <p>
+      Django é um framework web de alto nível para Python que permite o desenvolvimento rápido e seguro de aplicações web. Ele oferece uma estrutura robusta para criar sites complexos de forma eficiente, utilizando o princípio de "não se repita" (DRY - Don't Repeat Yourself).
+    </p>
+    <p>
+      Aprender Django é fundamental para quem deseja trabalhar com desenvolvimento backend, APIs REST e aplicações web modernas. Este curso foi desenvolvido para fornecer a base essencial para você se tornar um desenvolvedor Python Django completo.
+    </p>
+    <a class="btn" href="{% url 'home' %}">Voltar</a>
+  </div>
+</body>
+</html>
